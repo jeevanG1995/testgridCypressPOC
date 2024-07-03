@@ -1,2 +1,2 @@
-BUILD_ID=15
-BUILD_URL=https://poc5.testgrid.io//cypress_sessions15
+BUILD_ID=24
+BUILD_URL=https://poc5.testgrid.io//cypress_sessions24

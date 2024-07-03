@@ -44,9 +44,9 @@ jobs:
       - name: Run Cypress UI tests on test grid
         run: testgrid-cypress run --build_name=build_$(date +%Y%m%d%H%M%S)
 
-      # Step 5: Upload test reports as artifacts
-      - name: Upload Reports
-        uses: actions/upload-artifact@v2
-        with:
-          name: UI Tests Report
-          path: cypress/reports
+      # # Step 5: Upload test reports as artifacts
+      # - name: Upload Reports
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: UI Tests Report
+      #     path: cypress/reports

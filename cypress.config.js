@@ -27,9 +27,9 @@ module.exports = defineConfig({
     application_URL: 'https://www.saucedemo.com'
   },
 
-  // Set the default viewport dimensions
-  viewportHeight: 760,
-  viewportWidth: 1100,
+  // // Set the default viewport dimensions
+  // viewportHeight: 760,
+  // viewportWidth: 1100,
 
   // Set the number of retries for failed tests
   retries: 1,
@@ -39,7 +39,7 @@ module.exports = defineConfig({
   videoCompression: true,
 
   // Configure the Mochawesome reporter for generating test reports
-  screenshotOnRunFailure: true,
+  // screenshotOnRunFailure: true,
 
   chromeWebSecurity: false,
 
@@ -49,5 +49,7 @@ module.exports = defineConfig({
       // implement node event listeners here
       // require('cypress-mochawesome-reporter/plugin')(on);
     },
+    video: true,
+    videoCompression: true,
   },
 });
