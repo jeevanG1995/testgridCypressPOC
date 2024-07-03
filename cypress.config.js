@@ -39,24 +39,7 @@ module.exports = defineConfig({
   videoCompression: true,
 
   // Configure the Mochawesome reporter for generating test reports
-  reporter: 'cypress',
-  reporterOptions: {
-    reportDir: 'cypress/reports',
-    // charts: true,
-    // reportPageTitle: 'TestGrid POC UI Tests',
-    // embeddedScreenshots: true,
-    // inlineAssets: true,
-    // overwrite: true,
-    // autoOpen: false,
-    // code: true,
-    // timestamp: 'longDate',
-    // showPassed: true,
-    saveAllAttempts: false,
-    // Enable video recording of test runs
-    video: true,
-    // Enable screenshots on test failure
-    screenshotsOnFailure: true
-  },
+  screenshotOnRunFailure: true,
 
   chromeWebSecurity: false,
 
