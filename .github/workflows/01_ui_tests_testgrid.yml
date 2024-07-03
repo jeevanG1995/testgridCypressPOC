@@ -1,7 +1,7 @@
 # This GitHub Actions workflow is designed to execute Cypress tests using Chrome on various events 
 # such as manual trigger, push to the master branch, or pull requests to the master branch.
 
-name: 01_Pre-defined browser Chrome
+name: 01_testgrid workflow
 
 on:
   # Manual Trigger with pre-defined browser Chrome
