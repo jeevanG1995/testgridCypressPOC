@@ -32,35 +32,39 @@ module.exports = defineConfig({
   viewportWidth: 1100,
 
   // Set the number of retries for failed tests
-  retries: 1, 
+  retries: 1,
 
   // Enable video recording of test runs and compress the video
   video: true,
   videoCompression: true,
-  
+
   // Configure the Mochawesome reporter for generating test reports
-  reporter: 'cypress-mochawesome-reporter',
+  reporter: 'cypress',
   reporterOptions: {
-    reportDir: 'cypress/reports/sauce-demo-ui-tests-report',
-    charts: true,
-    reportPageTitle: 'Sauce Demo UI Tests',
-    embeddedScreenshots: true,
-    inlineAssets: true,    
-    overwrite: true,
-    autoOpen: false,
-    code: true,
-    timestamp: 'longDate',
-    showPassed: true,
+    reportDir: 'cypress/reports',
+    // charts: true,
+    // reportPageTitle: 'TestGrid POC UI Tests',
+    // embeddedScreenshots: true,
+    // inlineAssets: true,
+    // overwrite: true,
+    // autoOpen: false,
+    // code: true,
+    // timestamp: 'longDate',
+    // showPassed: true,
     saveAllAttempts: false,
+    // Enable video recording of test runs
+    video: true,
+    // Enable screenshots on test failure
+    screenshotsOnFailure: true
   },
 
-  chromeWebSecurity:false,
+  chromeWebSecurity: false,
 
   // Setup Node events for Cypress (in this case, use the mochawesome reporter plugin)
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
-      require('cypress-mochawesome-reporter/plugin')(on);
+      // require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
 });
