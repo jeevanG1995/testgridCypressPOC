@@ -42,7 +42,7 @@ jobs:
 
       # Step 4: Run Cypress tests on Chrome browser
       - name: Run Cypress UI tests on test grid
-        run: testgrid-cypress run
+        run: testgrid-cypress run --build_name=build_$(date +%Y%m%d%H%M%S)
 
       # Step 5: Upload test reports as artifacts
       - name: Upload Reports
